@@ -186,6 +186,7 @@ a {
   height: 100vh;
   margin-top: -5.9rem;
   padding: 0 2rem;
+  transition: all 0.2s ease;
 }
 .header {
   max-width: 1000px;
@@ -194,13 +195,17 @@ a {
   justify-content: space-between;
   margin: 0 auto;
   padding: 2.5rem 2rem 0 2rem;
+  transition: all 0.2s ease;
 }
 .hero__container {
-  padding-top: 37.2rem;
+  height: 90%;
   max-width: 63.7rem;
   margin: 0 auto;
-  height: 31.3rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
 }
 .hero__description {
   margin-top: 5rem;
@@ -265,6 +270,12 @@ a {
   display: none;
 }
 @media screen and (max-width: 480px) {
+  .header:has(> .menu-btn:checked) + main .hero-section {
+    background-size: 382%;
+    background-position: left 45% bottom 45%;
+    background-repeat: no-repeat;
+    margin-top: -16rem;
+  }
   .header {
     flex-wrap: wrap;
     padding: 0 1.5rem;
@@ -273,8 +284,9 @@ a {
     row-gap: 2rem;
   }
   .hero-section {
-    margin-top: -14.9rem;
-    background-position: left 35% bottom 45%;
+    margin-top: -10rem;
+    background-position: left 45% bottom 45%;
+    transition: background-size 0.2s ease;
   }
   .hero__container {
     padding-top: 25rem;
