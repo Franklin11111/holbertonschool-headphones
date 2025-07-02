@@ -532,3 +532,38 @@ textarea:required:valid ~ .form-field-icon::after {
 .btn-box {
   text-align: center;
 }
+footer {
+  margin-top: 5rem;
+  width: 100%;
+  padding: 5rem 2rem 3rem 2rem;
+  background-color: #071629;
+  text-align: center;
+}
+.footer-container {
+  max-width: 100rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.footer-container img {
+  max-width: 16rem;
+}
+.social span {
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.4rem;
+}
+footer small {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 480px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
