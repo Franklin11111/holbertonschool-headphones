@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="icon" href="image/png" href="images/favicon.png" />
+    <link
+      href="https://fonts.cdnfonts.com/css/source-sans-pro"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/spin-cycle" rel="stylesheet" />
+    <link rel="stylesheet" href="icons/holberton_school-icon/demo-files/demo.css">
+    <link rel="stylesheet" href="icons/holberton_school-icon/style.css"></head>
+    <link rel="stylesheet" href="3-styles.css" />
+    <title>Headphones</title>
+  </head>
+  <body>
+    <header class="header">
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon"
+        ><span class="navicon"></span
+      ></label>
+      <img
+        src="images/logo_headphones.png"
+        alt="Image of 'Headphones' webpage logo"
+        class="logo"
+      />
+      <nav class="nav">
+        <ul class="nav__main-nav">
+          <li><a href="#about">what we do</a></li>
+          <li><a href="#results">out results</a></li>
+          <li><a href="#contact">contacs us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero__container">
+          <h1>Lorem ipsum dolor sit amet lorem ipsum</h1>
+          <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit</p>
+
+          <button class="btn-primary">call to action</button>
+
+          <p class="hero__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nam
+            blanditiis labore fugit? Quo aliquid similique accusamus nobis? Et
+            laudantium sapiente magni asperiores? Blanditiis est deserunt facere
+            accusamus doloremque quis esse alias voluptatibus harum veritatis
+            aperiam quo aliquid maxime repellat, sint dicta autem vitae numquam
+            distinctio iste soluta laboriosam animi?
+          </p>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about__text">
+          <h2>What we do...</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum velit
+            cupiditate praesentium. Dicta libero iure pariatur ratione magni,
+            tempore ullam nihil ut sapiente aspernatur reprehenderit est, ab
+            aliquam consequuntur esse odio alias quaerat sunt voluptates?
+            Corporis quisquam beatae molestiae eos earum culpa, voluptate omnis
+            a, ab voluptates accusamus, cum cumque!
+          </p>
+        </div>
+        <ul class="cards-list">
+          <li><span class="holberton_school-icon-ic_sound"></span>
+          <h3>Lorem ipsum</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></li>
+        <li><span class="holberton_school-icon-ic_video"></span>
+          <h3>Lorem ipsum</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></li>
+        <li><span class="holberton_school-icon-ic_music"></span>
+          <h3>Lorem ipsum</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></li>
+        <li><span class="holberton_school-icon-ic_hearing"></span>
+          <h3>Lorem ipsum</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></li>
+
+        </ul>
+      </section>
+       <!-- Our results -->
+       <section class="results" id="results">
+        <div class="results__text">
+          <h2>Our results speak for themseves</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum velit
+            cupiditate praesentium. Dicta libero iure pariatur ratione magni,
+            tempore ullam nihil ut sapiente aspernatur reprehenderit est, ab
+            aliquam consequuntur esse odio alias quaerat sunt voluptates?
+            Corporis quisquam beatae molestiae eos earum culpa, voluptate omnis
+            a, ab voluptates accusamus, cum cumque!
+          </p>
+        </div>
+        <ul class="cards-list">
+          <li>
+          <h3>+2%</h3>
+        <p>Lorem ipsum dolor</p></li>
+        <li>
+          <h3>+2%</h3>
+        <p>Lorem ipsum dolor</p></li>
+        <li>
+          <h3>+2%</h3>
+        <p>Lorem ipsum dolor</p></li>
+        <li>
+          <h3>+2%</h3>
+        <p>Lorem ipsum dolor</p></li>
+        </ul>
+      </section>
+      <section class="contact" id="contact">
+        <form action="#" method="post"  class="form">
+            <h2>Contact us</h2>
+            <fieldset>
+                <div class="form-group">
+                <label for="name">Name</label>
+                <span class="form-field-container">
+                <input class="name-input" type="text" id="name" placeholder="e.g. John Smith" pattern="\w{3,16}" required size="30"> 
+                <i class="form-field-icon"></i>
+            </span>
+                <p>Name should have minimum 3 and maximum 16 characters</p>
+                </div>
+                <label for="email">Email</label>
+                <span class="form-field-container"><input type="email" id="email" name="email"
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="e.g. jsmith@example.com" size="30">
+                    <i class="form-field-icon"></i>
+                    </span>
+                    <div class="form-group">
+                <label for="message">Your message</label>
+                <span class="form-field-container">
+                <textarea name="message" id="message" pattern="\w{20,250}" required cols="25" rows="10" placeholder="Please enter your message here"></textarea>
+                <i class="form-field-icon"></i>
+                </span>
+                <p>Message should have minimum 20 and maximum 250 characters</p>
+                </div>
+                <div class="btn-box">
+                <button type="submit" class="btn-primary">call to action</button>
+                </div>
+            </fieldset>
+        </form>
+      </section>
+    </main>
+    <script src="icons/holberton_school-icon/demo-files/demo.js"></script>
+  </body>
+</html>
