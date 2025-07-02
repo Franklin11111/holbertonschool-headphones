@@ -275,9 +275,10 @@ a {
     background-size: 382%;
     background-position: left 45% bottom 45%;
     background-repeat: no-repeat;
-    margin-top: -16rem;
+    /* margin-top: -16rem; */
   }
   .header {
+    background-color: rgba(155, 157, 160, 1);
     flex-wrap: wrap;
     padding: 0 1.5rem;
     align-items: center;
