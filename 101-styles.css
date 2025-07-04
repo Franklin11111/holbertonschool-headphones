@@ -288,7 +288,7 @@ a {
   .hero-section {
     margin-top: -10rem;
     background-position: left 45% bottom 45%;
-    transition: background-size 0.2s ease;
+    transition: all 0.2s ease;
   }
   .hero__container {
     padding-top: 25rem;
@@ -375,6 +375,10 @@ a {
   font-weight: 600;
   margin-bottom: 2rem;
 }
+.about__text h2 {
+  cursor: pointer;
+  transition: transform 300ms;
+}
 .results__text p,
 .about__text p {
   font-size: 1.6rem;
@@ -403,6 +407,7 @@ a {
   color: #fff;
   justify-content: center;
   margin-bottom: 1rem;
+  box-shadow: 1rem 1rem 2rem 2rem rgba(255, 255, 255, 0.8);
 }
 .cards-list li {
   display: flex;
@@ -414,17 +419,22 @@ a {
   align-items: center;
   text-align: center;
 }
-.about h2 {
-  animation-name: move-down;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
+.about h2:hover {
+  animation-name: scale-fade;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
 }
 .results .cards-list h3 {
   font-size: 4.6rem;
 }
 .results .cards-list li:hover {
   animation-name: rotate-fading;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+.card-wrap:hover {
+  animation-name: add-shadow;
   animation-duration: 2s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
@@ -599,18 +609,18 @@ footer small {
     scale: 100%;
   }
 }
-@keyframes move-down {
+@keyframes scale-fade {
   0% {
-    transform: translateY(-30rem);
+    transform: scale(1);
+    opacity: 1;
   }
-  40% {
-    transform: translateY(-10rem);
-  }
-  80% {
-    transform: translateY(5rem);
-  }
+  /* 80% {
+    transform: scale(0.7);
+    opacity: 0;
+  } */
   100% {
-    transform: translateY(0);
+    transform: scale(2);
+    opacity: 0;
   }
 }
 @keyframes rotate-fading {
@@ -618,10 +628,19 @@ footer small {
     transform: rotate(45deg);
     scale: 200%;
     opacity: 1;
+    z-index: 1;
   }
   to {
     transform: rotate(0deg);
     scale: 100%;
     opacity: 0;
+  }
+}
+@keyframes add-shadow {
+  from {
+    filter: drop-shadow(0 0 2rem rgba(255, 255, 255, 0.8));
+  }
+  to {
+    filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.2));
   }
 }
